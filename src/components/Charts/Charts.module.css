@@ -1,0 +1,13 @@
+.container{
+    background-color: rgb(255, 231, 170);
+    display:flex;
+    justify-content: center;
+    width: 70%;
+
+    
+}
+@media (max-width:770px){
+    .container{
+            width:100%;
+    }
+}
