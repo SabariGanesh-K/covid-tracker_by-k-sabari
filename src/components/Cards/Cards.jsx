@@ -18,7 +18,7 @@ const Cards=({ data : {confirmed,recovered,deaths,lastUpdate} }  )=> {
                             <CountUp start={0} end={confirmed.value} duration={2} separator=","/>
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of ACTIVE COVID-19 cases worldwide</Typography>
+                        <Typography variant='body2'>Number of ACTIVE COVID-19 cases </Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}xs={12} md={3} className={cx(styles.card,styles.recovered)} >
@@ -28,7 +28,7 @@ const Cards=({ data : {confirmed,recovered,deaths,lastUpdate} }  )=> {
                             <CountUp start={0} end={recovered.value} duration={4} separator=','/>
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of Persons recovered from COVID-19 worldwide</Typography>
+                        <Typography variant='body2'>Number of Persons recovered from COVID-19 </Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}xs={12} md={3} className={cx(styles.card,styles.deaths)} >
@@ -38,7 +38,7 @@ const Cards=({ data : {confirmed,recovered,deaths,lastUpdate} }  )=> {
                             <CountUp start={0} end={deaths.value} duration={6} separator=','/>
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of persons Died due to COVID-19 worldwide</Typography>
+                        <Typography variant='body2'>Number of persons Died due to COVID-19 </Typography>
                     </CardContent>
                 </Grid>
             </Grid>
